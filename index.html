@@ -22,7 +22,7 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0B14'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='30' font-weight='700' fill='%237B61FF' text-anchor='middle'%3E%7B%7D%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 
@@ -108,31 +108,35 @@
     <p>Cada página se diseña a la medida del negocio — no usamos plantillas genéricas.</p>
   </div>
   <div class="work-grid">
-    <a href="https://oralhealth-clinica-dental.vercel.app/" class="work-card" target="_blank" rel="noopener">
-      <div class="work-preview work-dental">
-        <div class="work-mock">
-          <div class="mock-bar"></div>
-          <div class="mock-title">Sonría con confianza</div>
-          <div class="mock-line"></div>
-          <div class="mock-line short"></div>
-          <div class="mock-btn">Reservar cita</div>
+    <a href="https://oralhealth-clinica-dental.vercel.app/" class="work-card work-card-live" target="_blank" rel="noopener">
+      <div class="browser-frame">
+        <div class="browser-bar">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">oralhealth-clinica-dental.vercel.app</div>
         </div>
-        <span class="work-badge">Demo en vivo</span>
+        <div class="browser-view">
+          <iframe src="https://oralhealth-clinica-dental.vercel.app/" loading="lazy" title="Demo consultorio dental"></iframe>
+        </div>
       </div>
+      <span class="work-badge">Demo en vivo</span>
       <div class="work-info">
         <b>Consultorio dental</b>
         <span>Reservas en línea, recordatorios automáticos y galería de casos.</span>
         <span class="work-link">Ver demo completa →</span>
       </div>
     </a>
-    <a href="#contacto" class="work-card">
+    <a href="#contacto" class="work-card work-card-restaurant">
       <div class="work-preview work-food">
-        <div class="work-mock">
-          <div class="mock-bar"></div>
-          <div class="mock-title">Menú del día</div>
-          <div class="mock-line"></div>
-          <div class="mock-line short"></div>
-          <div class="mock-btn">Pedir por WhatsApp</div>
+        <div class="menu-mock">
+          <div class="menu-mock-head">
+            <span class="menu-mock-emoji">🍛</span>
+            <div><div class="menu-mock-name">Sabor Criollo</div><div class="menu-mock-sub">Menú del día</div></div>
+          </div>
+          <div class="menu-mock-item"><span>🍗 Pollo guisado</span><b>RD$250</b></div>
+          <div class="menu-mock-item"><span>🐟 Pescado frito</span><b>RD$320</b></div>
+          <div class="menu-mock-item"><span>🥤 Jugo natural</span><b>RD$80</b></div>
+          <div class="menu-mock-total"><span>Total</span><b>RD$650</b></div>
+          <div class="mock-btn mock-btn-wa">💬 Pedir por WhatsApp</div>
         </div>
       </div>
       <div class="work-info">
@@ -141,14 +145,12 @@
         <span class="work-link">Solicitar una demo →</span>
       </div>
     </a>
-    <a href="#contacto" class="work-card">
-      <div class="work-preview work-shop">
-        <div class="work-mock">
-          <div class="mock-bar"></div>
-          <div class="mock-title">Su negocio aquí</div>
-          <div class="mock-line"></div>
-          <div class="mock-line short"></div>
-          <div class="mock-btn">Empezar ahora</div>
+    <a href="#contacto" class="work-card work-card-next">
+      <div class="work-preview work-next">
+        <div class="next-mock">
+          <div class="next-icon">✦</div>
+          <div class="next-title">Su negocio podría<br>estar aquí</div>
+          <div class="next-sub">Barbería · Colmado · Boutique · Gimnasio…</div>
         </div>
       </div>
       <div class="work-info">
@@ -354,6 +356,6 @@
   <span class="wa-label">Escríbenos</span>
 </a>
 
-<script src="script.js?v=5"></script>
+<script src="script.js?v=6"></script>
 </body>
 </html>
